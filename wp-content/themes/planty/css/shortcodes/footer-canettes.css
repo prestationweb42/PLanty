@@ -1,0 +1,92 @@
+/* CSS POUR LE SHORTCODE .footer-canettes */
+.div_container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.canette {
+    width: 12.6%;
+    height: auto;
+    z-index: 0;
+}
+.c01 {
+    position: absolute;
+    left: -75px;
+    bottom: -150px;
+}
+.c02 {
+    position: absolute;
+    left: 15px;
+    bottom: -130px;
+}
+.c03 {
+    position: absolute;
+    left: 105px;
+    bottom: -150px;
+}
+.c04 {
+    position: absolute;
+    left: 195px;
+    bottom: -170px;
+}
+.c05 {
+    position: absolute;
+    left: 285px;
+    bottom: -150px;
+}
+.c06 {
+    position: absolute;
+    left: 378px;
+    bottom: -130px;
+}
+.c07 {
+    position: absolute;
+    left: 472px;
+    bottom: -170px;
+}
+.c08 {
+    position: absolute;
+    left: 565px;
+    bottom: -150px;
+}
+.c09 {
+    position: absolute;
+    left: 660px;
+    bottom: -130px;
+}
+.c10 {
+    position: absolute;
+    left: 755px;
+    bottom: -150px;
+}
+.c11 {
+    position: absolute;
+    left: 850px;
+    bottom: -170px;
+}
+.c12 {
+    position: absolute;
+    left: 945px;
+    bottom: -150px;
+}
+.c13 {
+    position: absolute;
+    left: 1040px;
+    bottom: -130px;
+}
+.c14 {
+    position: absolute;
+    left: 1135px;
+    bottom: -150px;
+}
+.c15 {
+    position: absolute;
+    left: 1230px;
+    bottom: -170px;
+}
+.c16 {
+    position: absolute;
+    left: 1325px;
+    bottom: -150px;
+}
