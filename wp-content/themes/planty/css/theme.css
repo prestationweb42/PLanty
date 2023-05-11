@@ -20,7 +20,7 @@ li.menu-item-31 a,
 li.menu-item-32 a {
     font-size: 16px;
     font-weight: 400;
-    color: #000 !important;
+    color: #000;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center !important;
@@ -338,8 +338,13 @@ li.menu-item-402 a:hover {
 @media screen and (max-width: 1024px) {
     /* Header */
     li.menu-item-31 a,
-    .menu-item-32 a {
+    li.menu-item-32 a {
         color: #ffffff !important;
+        text-align: left !important;
+    }
+    li.menu-item-35 a {
+        width: 160px;
+        padding: 20px 30px !important;
     }
     /* Page Accueil */
     .accueil_section_1 {
