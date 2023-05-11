@@ -87,6 +87,14 @@ input[type="number"]::-webkit-outer-spin-button {
 .wpcf7-submit:hover {
     background: #c02e44 !important;
 }
+
+/*Response Ouput*/
+.wpcf7-response-output {
+    font-size: 20px;
+    color: #fff !important;
+    text-align: center;
+    margin-top: 0 !important;
+}
 /* Media Screen*/
 @media screen and (max-width: 1024px) {
     .col_left input,
