@@ -128,6 +128,32 @@ li.menu-item-402 a:hover {
     padding-bottom: 10px !important;
     color: #d2776a;
 }
+.g3_row-sup,
+.g3_row-inf {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.g3_row_sup_left,
+.g3_row_sup_right,
+.g3_row_inf_left,
+.g3_row_inf_right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.g3_row_sup_left .para,
+.g3_row_sup_right .para,
+.g3_row_inf_left .para,
+.g3_row_inf_right .para {
+    width: auto;
+    position: absolute;
+    color: #fff !important;
+    font-weight: 800 !important;
+    font-size: 45px !important;
+    line-height: 40px;
+    margin: 0 !important;
+}
 .accueil_section_3 p {
     width: 40%;
     margin: 0 auto;
@@ -138,11 +164,6 @@ li.menu-item-402 a:hover {
     letter-spacing: 0em;
     text-align: center;
     color: #000;
-}
-.g3_row-sup,
-.g3_row-inf {
-    max-width: 60%;
-    margin: 0 auto;
 }
 .accueil_section_3 .btn a {
     font-weight: 700 !important;
@@ -319,6 +340,19 @@ li.menu-item-402 a:hover {
     max-width: 860px !important;
     color: #fff;
 }
+.col_fruits {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_fruits .text {
+    width: auto;
+    position: absolute;
+    color: #fff !important;
+    font-weight: 750 !important;
+    margin: 0 !important;
+}
 
 /*** Footer ***/
 #site-footer {
@@ -388,6 +422,16 @@ li.menu-item-402 a:hover {
     .accueil_section_5 {
         display: none !important;
     }
+    .g3_row_sup_left .para,
+    .g3_row_sup_right .para,
+    .g3_row_inf_left .para,
+    .g3_row_inf_right .para {
+        font-weight: 800 !important;
+        font-size: 35px !important;
+        line-height: 40px;
+        margin: 0 !important;
+    }
+
     /* Page Nous rencontrer*/
     .nousrencontrer_section_1 {
         background-image: url(../images/fleur.png);
@@ -460,6 +504,16 @@ li.menu-item-402 a:hover {
     .g4_col_main h3,
     p {
         text-align: center;
+    }
+    .g3_row_sup_left .para,
+    .g3_row_sup_right .para,
+    .g3_row_inf_left .para,
+    .g3_row_inf_right .para {
+        width: 70%;
+        font-weight: 800 !important;
+        font-size: 35px !important;
+        line-height: 40px;
+        margin: 0 !important;
     }
     /* Page Nous rencontrer */
     .nousrencontrer_section_1 {
@@ -557,6 +611,17 @@ li.menu-item-402 a:hover {
     .g4_col_main p {
         width: 70%;
         margin: 0 auto;
+    }
+    .g3_row_sup_left .para,
+    .g3_row_sup_right .para,
+    .g3_row_inf_left .para,
+    .g3_row_inf_right .para {
+        width: 70%;
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        text-align: center;
+        line-height: 30px;
+        margin: 0 !important;
     }
     /* Page Nous rencontrer */
     .nousrencontrer_section_1 {
@@ -695,6 +760,15 @@ li.menu-item-402 a:hover {
     .accueil_section_3 .btn a {
         font-weight: 600 !important;
         padding: 15px 30px !important;
+    }
+    .g3_row_sup_left .para,
+    .g3_row_sup_right .para,
+    .g3_row_inf_left .para,
+    .g3_row_inf_right .para {
+        width: 80%;
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        line-height: 26px;
     }
     /* Page Nous rencontrer*/
     .nousrencontrer_section_1 h1 {

@@ -50,10 +50,3 @@ namespace Kadence;
 
 		do_action('kadence_after_header');
 		?>
-        <!-- <div id="inner-wrap" class="wrap hfeed kt-clear">
-            <?php
-			/**
-			 * Hook for top of inner wrap.
-			 */
-			do_action('kadence_before_content');
-			?>-->
