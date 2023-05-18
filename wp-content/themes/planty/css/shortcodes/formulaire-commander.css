@@ -1,4 +1,5 @@
-/* CSS POUR LE SHORTCODE .formulaire commander */
+/* CSS POUR LE SHORTCODE form7 vosinformations */
+/* Positionnement des colonnes */
 .form_container {
     max-width: 100%;
     display: flex;
@@ -15,6 +16,7 @@
 .col_right {
     padding-left: 35px;
 }
+/* Styles des titres h2 */
 .col_left h2,
 .col_right h2 {
     font-style: normal;
@@ -23,6 +25,7 @@
     line-height: 36px;
     color: #ffffff;
 }
+/* Styles des labels */
 .col_left label,
 .col_right label {
     width: 150px;
@@ -50,6 +53,7 @@
     margin-top: 13px;
     /* margin-bottom: 50px; */
 }
+/* Trait blanc de séparation */
 .col_left {
     border-right: 1px solid #fff;
 }
@@ -69,7 +73,6 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     margin: 40px 0;
 }
-
 .btn_submit,
 .wpcf7-submit {
     display: block !important;
@@ -88,14 +91,14 @@ input[type="number"]::-webkit-outer-spin-button {
     background: #c02e44 !important;
 }
 
-/*Response Ouput*/
+/* Styles message Response Ouput */
 .wpcf7-response-output {
     font-size: 20px;
     color: #fff !important;
     text-align: center;
     margin-top: 0 !important;
 }
-/* Media Screen*/
+/* Media Queries */
 @media screen and (max-width: 1024px) {
     .col_left input,
     .col_right input {
