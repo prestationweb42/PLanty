@@ -56,12 +56,6 @@ li.menu-item-402 a:hover {
     background: #c02e44;
 }
 
-@media screen and (max-width: 1024px) {
-    li.menu-item-35 a {
-        width: 200px;
-    }
-}
-
 /*** Page Accueil ***/
 .main_accueil {
     max-width: 1440px !important;
@@ -128,6 +122,7 @@ li.menu-item-402 a:hover {
     padding-bottom: 10px !important;
     color: #d2776a;
 }
+/* disposition et styles des visuels */
 .g3_row-sup,
 .g3_row-inf {
     max-width: 60%;
@@ -210,13 +205,11 @@ li.menu-item-402 a:hover {
 }
 
 /*** Page Nous Rencontrer ***/
-.main_nousrencontrer,
-.nousrencontrer_section_3,
-.nousrencontrer_section_4,
-.toto-nousrencontrer {
+.main_nousrencontrer {
     max-width: 1440px !important;
     margin: 0 auto !important;
 }
+/* Styles section 1 */
 .nousrencontrer_section_1 {
     width: 100%;
     min-height: 43vh;
@@ -247,7 +240,7 @@ li.menu-item-402 a:hover {
     text-align: center;
     margin: 0 auto;
 }
-
+/* Styles section 2*/
 .nousrencontrer_section_2 {
     min-height: 50vh;
     background-image: url(../images/feuille-gauche.png);
@@ -273,7 +266,7 @@ li.menu-item-402 a:hover {
 .container_team {
     margin-bottom: 0 !important;
 }
-
+/* Styles section 3 */
 .nousrencontrer_section_3 {
     min-height: 50vh;
     background-color: #ebe1da;
@@ -291,11 +284,7 @@ li.menu-item-402 a:hover {
     letter-spacing: 0em;
     margin: 60px 0 !important;
 }
-
-.toto-nousrencontrer {
-    height: 50vh;
-    background: #3b8e46;
-}
+/* Styles section 4 */
 .nousrencontrer_section_4 {
     background-color: #ebe1da;
 }
