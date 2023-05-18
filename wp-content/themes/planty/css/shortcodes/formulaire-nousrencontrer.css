@@ -1,8 +1,9 @@
-/* CSS POUR LE SHORTCODE formulaire-nousrencontrer */
+/* CSS POUR LE SHORTCODE form7 nousrencontrer */
 .col_form form {
     width: 380px;
     margin: 0 auto;
 }
+/* Style des labels */
 .col_form form label {
     font-size: 20px;
     font-weight: 400;
@@ -36,13 +37,14 @@
     color: #fff !important;
     background: #c02e44;
 }
-/*Response Ouput*/
+/* Styles message Response Ouput*/
 .col_form form .wpcf7-response-output {
     font-size: 20px;
     color: #000 !important;
     text-align: center;
     margin-top: 0 !important;
 }
+/* Media Queries */
 /* Media Query 1024px */
 @media screen and (max-width: 1024px) {
     .col_form form input {
