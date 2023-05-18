@@ -2859,7 +2859,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 			$css->add_property( 'letter-spacing', $this->render_font_spacing( kadence()->option( 'product_archive_price_font' ), 'mobile' ) );
 			$css->stop_media_query();
 			// Product Archive Button Font.
-			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
+			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button), .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button), .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
 			$css->add_property( 'border-radius', $this->render_measure( kadence()->option( 'product_archive_button_radius' ) ) );
 			$css->add_property( 'color', $this->render_color( kadence()->sub_option( 'product_archive_button_color', 'color' ) ) );
 			$css->add_property( 'background', $this->render_color( kadence()->sub_option( 'product_archive_button_background', 'color' ) ) );
@@ -2867,19 +2867,19 @@ class Component implements Component_Interface, Templating_Component_Interface {
 			$css->add_property( 'border-color', $this->render_color( kadence()->sub_option( 'product_archive_button_border_colors', 'color' ) ) );
 			$css->add_property( 'box-shadow', $css->render_shadow( kadence()->option( 'product_archive_button_shadow' ), kadence()->default( 'product_archive_button_shadow' ) ) );
 			$css->render_font( kadence()->option( 'product_archive_button_typography' ), $css );
-			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:hover, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link:hover' );
+			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button):hover, .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button):hover, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link:hover' );
 			$css->add_property( 'color', $this->render_color( kadence()->sub_option( 'product_archive_button_color', 'hover' ) ) );
 			$css->add_property( 'background', $this->render_color( kadence()->sub_option( 'product_archive_button_background', 'hover' ) ) );
 			$css->add_property( 'border-color', $this->render_color( kadence()->sub_option( 'product_archive_button_border_colors', 'hover' ) ) );
 			$css->add_property( 'box-shadow', $css->render_shadow( kadence()->option( 'product_archive_button_shadow_hover' ), kadence()->default( 'product_archive_button_shadow_hover' ) ) );
 			$css->start_media_query( $media_query['tablet'] );
-			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
+			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button), .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button), .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
 			$css->add_property( 'font-size', $this->render_font_size( kadence()->option( 'product_archive_button_typography' ), 'tablet' ) );
 			$css->add_property( 'line-height', $this->render_font_height( kadence()->option( 'product_archive_button_typography' ), 'tablet' ) );
 			$css->add_property( 'letter-spacing', $this->render_font_spacing( kadence()->option( 'product_archive_button_typography' ), 'tablet' ) );
 			$css->stop_media_query();
 			$css->start_media_query( $media_query['mobile'] );
-			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
+			$css->set_selector( '.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button), .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button), .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link' );
 			$css->add_property( 'font-size', $this->render_font_size( kadence()->option( 'product_archive_button_typography' ), 'mobile' ) );
 			$css->add_property( 'line-height', $this->render_font_height( kadence()->option( 'product_archive_button_typography' ), 'mobile' ) );
 			$css->add_property( 'letter-spacing', $this->render_font_spacing( kadence()->option( 'product_archive_button_typography' ), 'mobile' ) );

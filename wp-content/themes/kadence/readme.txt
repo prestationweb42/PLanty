@@ -4,7 +4,7 @@ Tags: translation-ready, two-columns, right-sidebar, left-sidebar, footer-widget
 Requires at least: 5.4
 Tested up to: 6.2
 Requires PHP: 7.2
-Stable tag: 1.1.38
+Stable tag: 1.1.39
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,10 @@ Kadence is released under GNU General Public License v3.0 (or later)
 
 
 = Changelog =
+
+== 1.1.39 | 16th May 2023 ==
+* Fix: Possible issue with footer widgets spacing.
+* Fix: Issue with product buttons style.
 
 == 1.1.38 | 15th May 2023 ==
 * Fix: Update not showing.
