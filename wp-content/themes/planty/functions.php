@@ -1,5 +1,5 @@
 <?php
-
+// condition d'utilisation du lien Admin
 add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 function add_admin_link($items, $args)
 {
@@ -20,7 +20,7 @@ function add_admin_link($items, $args)
     return $items;
 }
 
-
+// Gestion des fichiers de styles
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
@@ -31,22 +31,22 @@ function theme_enqueue_styles()
         array(),
         filemtime(get_stylesheet_directory() . '/css/theme.css')
     );
-    // Chargement du css pour notre shortcode formulaire nous rencontrer
+    // Chargement du css pour le shortcode formulaire Nous rencontrer
     wp_enqueue_style('formulaire-nousrencontrer-shortcode', get_stylesheet_directory_uri() .
         '/css/shortcodes/formulaire-nousrencontrer.css', array(), filemtime(get_stylesheet_directory() .
         '/css/shortcodes/formulaire-nousrencontrer.css'));
-    // Chargement du css pour notre shortcode formulaire commander
+    // Chargement du css pour le shortcode des btns Commander
     wp_enqueue_style(
         'btns-commander-shortcode',
         get_stylesheet_directory_uri() . '/css/shortcodes/btns-commander.css',
         array(),
         filemtime(get_stylesheet_directory() . '/css/shortcodes/btns-commander.css')
     );
-    // Chargement du css pour notre shortcode formulaire information
+    // Chargement du css pour le shortcode formulaire Commander
     wp_enqueue_style('formulaire-commander-shortcode', get_stylesheet_directory_uri() .
         '/css/shortcodes/formulaire-commander.css', array(), filemtime(get_stylesheet_directory() .
         '/css/shortcodes/formulaire-commander.css'));
-    // Chargement du css pour notre shortcode footer-canettes
+    // Chargement du css pour le shortcode footer-canettes
     wp_enqueue_style(
         'footer-canettes-shortcode',
         get_stylesheet_directory_uri() . '/css/shortcodes/footer-canettes.css',
@@ -63,7 +63,7 @@ add_shortcode('btns-commander', 'btns_commander_func');
 function btns_commander_func()
 {
 
-    //Je commence à récupéré le flux d'information
+    //Je recupere le flux d'information
     ob_start();
 
 ?>
@@ -85,12 +85,12 @@ function btns_commander_func()
     return $output;
 }
 
-// Ajout du shortcode 'footer-canettes'
+// Ajout du shortcode 'footer-canettes' en bas des pages Accueil et Nous rencontrer
 add_shortcode('footer-canettes', 'footer_canettes_func');
 // Je génère le html retourné par mon shortcode
 function footer_canettes_func($atts)
 {
-    //Je récupère les attributs mis sur le shortcode
+    //Je récupère les attributs mis sur le shortcode ici l'image de la canette
     $atts = shortcode_atts(array(
         'src' => '',
     ), $atts, 'footer-canettes');
